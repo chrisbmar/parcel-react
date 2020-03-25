@@ -1,0 +1,11 @@
+{
+  "name": "parcel-react-setup",
+  "version": "1.0.0",
+  "description": "Boilerplate for a parcel and react project",
+  "main": "index.js",
+  "author": "Chris Martin <chrisabmartin@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
