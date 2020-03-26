@@ -6,7 +6,10 @@
   "author": "Chris Martin <chrisabmartin@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/client/index.html --no-cache",
+    "lint": "eslint '**/*.{js,jsx}' --max-warnings 20",
+    "prettier": "prettier --write '*.js' 'src/**/*.js'",
+    "format": "yarn run prettier"
   },
   "lint-staged": {
     "*.js": [
@@ -20,8 +23,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "autoprefixer": "^9.7.5",
