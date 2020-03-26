@@ -8,6 +8,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "yarn format"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
@@ -23,6 +33,8 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^1.5.0",
