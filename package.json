@@ -7,6 +7,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "parcel src/client/index.html --no-cache",
+    "build-prod": "parcel build src/client/index.html",
     "lint": "eslint '**/*.{js,jsx}' --max-warnings 20",
     "prettier": "prettier --write '*.js' 'src/**/*.js'",
     "format": "yarn run prettier"
